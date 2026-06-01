@@ -2,15 +2,15 @@ import { useState, useEffect, useRef } from 'react'
 import './index.css'
 
 const photos = [
-  { src: '/fotos/IMG_20260202_192515.jpg', caption: 'Nosso primeiro rolezinho juntos' },
-  { src: '/fotos/IMG_20260329_172948.jpg', caption: 'Aquele dia que a gente nao parava de rir' },
-  { src: '/fotos/IMG_20260401_133822.jpg', caption: 'Ate de palhacos a gente fica bonito' },
-  { src: '/fotos/IMG_20260502_123517.jpg', caption: 'Parceiros de aventura' },
-  { src: '/fotos/IMG_20260502_140302.jpg', caption: 'Sorriso que ilumina meu dia' },
-  { src: '/fotos/IMG_20260503_171618.jpg', caption: 'Mais um dia perfeito do seu lado' },
-  { src: '/fotos/IMG_20260523_121157.jpg', caption: 'A gente junto eh outra vibe' },
+  { src: '/fotos/IMG_20260202_192515.jpg', caption: 'A gente em Teresina curtindo uma academia porque a Ana não foi' },
+  { src: '/fotos/IMG_20260329_172948.jpg', caption: 'Pós natação - assinamos nossa promessa!!' },
+  { src: '/fotos/IMG_20260401_133822.jpg', caption: 'Nossa casa nova e onde somos muito felizes' },
+  { src: '/fotos/IMG_20260502_123517.jpg', caption: 'Nóis em Porto Alegre' },
+  { src: '/fotos/IMG_20260502_140302.jpg', caption: 'Pedalando na agua' },
+  { src: '/fotos/IMG_20260503_171618.jpg', caption: 'Lindos no guíba' },
+  { src: '/fotos/IMG_20260523_121157.jpg', caption: 'A nossa princezinha' },
   { src: '/fotos/IMG_20260523_193402.jpg', caption: 'Meu lugar favorito: do seu lado' },
-  { src: '/fotos/IMG_20260523_193415.jpg', caption: 'Essa foto resume a gente' },
+  { src: '/fotos/IMG_20260523_193415.jpg', caption: 'SHUAAAA' },
 ]
 
 const funnyCards = [
@@ -32,7 +32,7 @@ const funnyCards = [
   {
     emoji: '🤡',
     title: 'Verdade Inconveniente',
-    text: 'Eu antes de te conhecer: "nunca vou ser desses bobos apaixonados". Eu agora: mando 47 figurinhas de coracao por dia.',
+    text: 'Eu antes de te conhecer: "nunca vou ser dessa bobeira de paixonite". Eu agora: mando 47 figurinhas de coracao por dia.',
   },
 ]
 
@@ -152,7 +152,7 @@ function App() {
   const [counter, setCounter] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
   const containerRef = useScrollReveal([opened])
 
-  const startDate = new Date('2026-02-02T00:00:00')
+  const startDate = new Date('2024-03-15T00:00:00')
 
   useEffect(() => {
     const updateCounter = () => {
@@ -207,7 +207,7 @@ function App() {
           <section className="counter-section section-animate">
             <h2>Nosso Amor em Numeros</h2>
             <p style={{ marginBottom: '1.5rem', fontFamily: "'Caveat', cursive", fontSize: '1.3rem' }}>
-              Desde 02/02/2026 juntos e cada segundo vale a pena!
+              Desde 15/03/2024 juntos e cada segundo vale a pena!
             </p>
             <div className="counter-boxes">
               <div className="counter-box">
@@ -271,14 +271,14 @@ function App() {
                 <p>Isa,</p>
                 <br />
                 <p>
-                  Eu poderia escrever um textao romantico aqui, mas a gente sabe que eu ia 
-                  travar no meio e mandar um "eh noix" no final. Entao vou ser sincero:
+                  Amor, eu sei que a gente se conhece a pouco tempo (só 2 aninhos), 
+                  mas parece que te conheco ha uma vida inteira.
                 </p>
                 <br />
                 <p>
                   Voce eh a pessoa que faz meus dias mais leves, que transforma um dia qualquer 
                   em algo especial. Com voce eu rio mais, sonho mais e ate como mais (porque 
-                  comer junto eh muito melhor).
+                  comer junto é realmente muito melhor).
                 </p>
                 <br />
                 <p>
@@ -287,7 +287,7 @@ function App() {
                 </p>
                 <br />
                 <p>
-                  Esse site eh so uma pequena forma de dizer: eu te amo demais, sua linda!
+                  Esse site eh so uma pequena forma de dizer: eu te amo demais, meu amor!
                 </p>
                 <br />
                 <p>
@@ -295,7 +295,7 @@ function App() {
                 </p>
               </div>
               <div className="letter-signature">
-                Com todo meu amor (e um pouco de WiFi),
+                Com todo meu amor (e um pouco de IA),
                 <br />
                 Seu Lu 💕
               </div>
@@ -322,7 +322,7 @@ function App() {
           <section className="music-section section-animate">
             <h2>Nossa Musica</h2>
             <p className="music-subtitle">
-              Da o play e lembra de todos os nossos momentos juntos
+              Dá um play e veja se recorda dessa musica que tem tudo a ver com a gente (e que eu acho que voce gosta, hein? 😏)
             </p>
             <div className="spotify-embed">
               <iframe
@@ -341,10 +341,10 @@ function App() {
           {/* Footer */}
           <footer className="footer">
             <h2>Lu & Isa</h2>
-            <p>Desde 2026 causando juntos e que nunca pare!</p>
+            <p>Desde 2024 causando juntos e que nunca pare!</p>
             <div className="big-heart">❤️</div>
             <p style={{ marginTop: '1rem', fontSize: '1rem', opacity: 0.5 }}>
-              Feito com muito amor (e codigo) pra voce
+              Feito com muito amor (e codigo -- brincadeira, é IA! hahaha) pra você!
             </p>
           </footer>
         </>
