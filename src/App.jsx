@@ -1,16 +1,18 @@
 import { useState, useEffect, useRef } from 'react'
 import './index.css'
 
+const base = import.meta.env.BASE_URL
+
 const photos = [
-  { src: '/fotos/IMG_20260202_192515.jpg', caption: 'A gente em Teresina curtindo uma academia porque a Ana não foi' },
-  { src: '/fotos/IMG_20260329_172948.jpg', caption: 'Pós natação - assinamos nossa promessa!!' },
-  { src: '/fotos/IMG_20260401_133822.jpg', caption: 'Nossa casa nova e onde somos muito felizes' },
-  { src: '/fotos/IMG_20260502_123517.jpg', caption: 'Nóis em Porto Alegre' },
-  { src: '/fotos/IMG_20260502_140302.jpg', caption: 'Pedalando na agua' },
-  { src: '/fotos/IMG_20260503_171618.jpg', caption: 'Lindos no guíba' },
-  { src: '/fotos/IMG_20260523_121157.jpg', caption: 'A nossa princezinha' },
-  { src: '/fotos/IMG_20260523_193402.jpg', caption: 'Meu lugar favorito: do seu lado' },
-  { src: '/fotos/IMG_20260523_193415.jpg', caption: 'SHUAAAA' },
+  { src: `${base}fotos/IMG_20260202_192515.jpg`, caption: 'A gente em Teresina curtindo uma academia porque a Ana não foi' },
+  { src: `${base}fotos/IMG_20260329_172948.jpg`, caption: 'Pós natação - assinamos nossa promessa!!' },
+  { src: `${base}fotos/IMG_20260401_133822.jpg`, caption: 'Nossa casa nova e onde somos muito felizes' },
+  { src: `${base}fotos/IMG_20260502_123517.jpg`, caption: 'Nóis em Porto Alegre' },
+  { src: `${base}fotos/IMG_20260502_140302.jpg`, caption: 'Pedalando na agua' },
+  { src: `${base}fotos/IMG_20260503_171618.jpg`, caption: 'Lindos no guíba' },
+  { src: `${base}fotos/IMG_20260523_121157.jpg`, caption: 'A nossa princezinha' },
+  { src: `${base}fotos/IMG_20260523_193402.jpg`, caption: 'Meu lugar favorito: do seu lado' },
+  { src: `${base}fotos/IMG_20260523_193415.jpg`, caption: 'SHUAAAA' },
 ]
 
 const funnyCards = [
